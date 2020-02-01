@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var arreglo = [1,5,10,-2];
+        var arreglodos  = [];
+        var mayor = 0;
+        var menor = 0;
+        var total =0;
+
+        function newew(){
+            for(i = 0; i < arreglo.length; i++){
+                if (arreglo[i] > mayor){
+                    mayor = arreglo[i];
+                }
+            }
+            for(i = 0; i < arreglo.length; i++){
+                if (arreglo[i] < menor){
+                    menor = arreglo[i];
+                }
+            }
+            
+            for(let i of arreglo) total+=i;
+            total = total/arreglo.length;
+            
+            arreglodos.push(mayor);
+            arreglodos.push(menor);
+            arreglodos.push(total);
+            console.log(arreglodos);
+        }
+        newew();
+    </script>
+</body>
+</html>
