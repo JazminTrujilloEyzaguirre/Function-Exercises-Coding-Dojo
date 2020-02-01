@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function scale(arr, multiplier){
+            for(var i = 0; i < arr.length; i++){
+                arr[i] *= multiplier; 
+            }
+        return arr;
+        }
+        
+        var myArray = [1,2,3];
+        var num = 3; 
+        console.log(scale(myArray, num));
+    
+    </script>
+</body>
+</html>

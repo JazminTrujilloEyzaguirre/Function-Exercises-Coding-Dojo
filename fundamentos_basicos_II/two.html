@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var array = [2, 4, 6, 8];
+        var mayor = 0;
+        var menor = 2;
+
+        function num() {
+            for (i = 0; i < array.length; i++) {
+                if (array[i] < menor) {
+                    menor = array[i]
+                }
+                console.log(menor);
+            }
+            for (i = 0; i < array.length; i++) {
+                if (array[i] > mayor) {
+                    mayor = array[i];
+                }
+            }
+            return (mayor);
+        }
+        num();
+    </script>
+</body>
+</html>

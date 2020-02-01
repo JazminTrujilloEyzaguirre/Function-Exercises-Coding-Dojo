@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    function inverse(arr){
+    var tempNum = 0;
+    var swapNum = 0;
+
+    if(arr.length % 2 == 0){
+        for(var i = 1; i <= arr.length-3; i++){
+            tempNum = arr[i-1];
+            swapNum = arr[arr.length + (i*-1)];
+
+            arr[i-1] = swapNum;
+            arr[arr.length + (i*-1)] = tempNum;
+        }
+    }else{
+        for(var i = 1; i <= arr.length-2; i++){
+            tempNum = arr[i-1];
+            swapNum = arr[arr.length + (i*-1)];
+
+            arr[i-1] = swapNum;
+            arr[arr.length + (i*-1)] = tempNum;
+        }
+        
+    }
+    return arr;
+    }
+    var myArray = [3,1,6,4,2];
+    console.log(inverse(myArray));
+    
+    </script>
+</body>
+</html>
