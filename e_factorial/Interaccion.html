@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="" method="POST">
+        <div>
+            <h1>Calculador de factorial</h1>
+            <h3>¿Qué es la función factorial?</h3>
+            <p class="content">
+                La función factorial se representa con un signo de exclamación “!” detrás de un número. 
+                Esta exclamación quiere decir que hay que multiplicar todos los números enteros positivos que hay entre ese número y el 1.
+                Por ejemplo:factoriales 1
+                A este número, 6! le llamamos generalmente “6 factorial”, aunque también es correcto decir “factorial de 6”.</p>
+            <input type="text" placeholder="ingresa un numero" value="" id="numero"/>
+            <input type="button" value="Go" id="gou" onclick="factorial(document.getElementById('numero').value)"/>
+            <p id="resultado"></p>
+        </div>
+    </form>
+    <script src="interaccion_factorial.js"></script>
+</body>
+</html>

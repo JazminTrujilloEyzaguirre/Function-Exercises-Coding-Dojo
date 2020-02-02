@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radio Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="" method="POST">
+        <div>
+            <h1>Calculador de Radio</h1>
+            <p class="content">Para calcular el radio basándote en la
+                circunferencia, simplemente divide la circunferencia
+                entre 2π o 6.28. Por ejemplo, si la circunferencia del 
+                círculo es 15, el radio es r = 15/2π o 2.39. Recuerda la 
+                fórmula para encontrar el área del círculo. El área del círculo
+                se define como A = πr2.4 
+            </p>
+            <input type="text" placeholder="ingresa un numero" value="" id="numero"/>
+            <input class="botoncito" type="button" value="Go" id="gou" onclick="getArea(document.getElementById('numero').value)"/>
+            <p class="resultado" id="resultado"></p>
+        </div>
+    </form>
+    <script src="interaccion_factorial.js"></script>
+</body>
+</html>
